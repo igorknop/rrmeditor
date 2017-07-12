@@ -27,8 +27,9 @@ section > div {
   height: 59px;
   border-radius: 5px;
   z-index: 2;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 section > div:nth-child(even){
