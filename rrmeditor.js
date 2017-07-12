@@ -39,9 +39,10 @@ document.addEventListener("DOMContentLoaded", function() {
       return function(e) {
         e.stopPropagation();
         rrm.toggle(x);
-        updateImages();
         this.classList.remove("bounceIn");
+        this.offsetWidth;
         this.classList.add("bounceIn");
+        updateImages();
       };
     })(i), false);
   }
