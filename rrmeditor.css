@@ -6,7 +6,7 @@ main > section {
   min-height: 314px;
   border: 1px solid black;
   position: relative;
-  background-color: blue;
+  background-color: black;
 }
 main > section::after{
   background-image: url("images/BandasFrente.png");

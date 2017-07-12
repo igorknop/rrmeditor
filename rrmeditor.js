@@ -1,7 +1,7 @@
 var srcElement = null;
 var rrm = {
   bg: 0,
-  bgColors: ["blue", "green", "yellow", "red", "grey"],
+  bgColors: ["blue", "green", "yellow", "red", "black"],
   in: [
     [0, 0],
     [0, 0],
@@ -29,7 +29,7 @@ var rrm = {
 document.addEventListener("DOMContentLoaded", function() {
   var card = document.querySelector("section");
   card.addEventListener("click", function() {
-    rrm.bg += (rrm.bg < 3) ? 1 : -3;
+    rrm.bg += (rrm.bg < 4) ? 1 : -4;
     card.style.backgroundColor = rrm.bgColors[rrm.bg];
   }, false);
 
