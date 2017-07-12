@@ -26,6 +26,8 @@ section > div {
   width: 58px;
   height: 59px;
   border-radius: 5px;
+  z-index: 2;
+  background-size: contain;
 }
 
 section > div:nth-child(even){
