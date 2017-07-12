@@ -20,21 +20,44 @@ main > section::after{
   height: 100%;
 }
 
-.tile{
-  width: 80px;
-  height: 80px;
-  background-color: lightgrey;
-  border: 2px outset;
+section > div {
+  border: 2px solid white;
+  position: absolute;
+  width: 58px;
+  height: 59px;
+  border-radius: 5px;
 }
 
-.bass {
-  content: "Bass";
+section > div:nth-child(even){
+  left: 377px;
+}
+section > div:nth-child(odd){
+  left: 448px;
+}
+section > div:nth-child(2),
+section > div:nth-child(3)
+{
+  top: 50px;
+}
+section > div:nth-child(4),
+section > div:nth-child(5)
+{
+  top: 122px;
+}
+section > div:nth-child(6),
+section > div:nth-child(7)
+{
+  top: 194px;
+}
+section > div:nth-child(8),
+section > div:nth-child(9)
+{
+  top: 266px;
 }
 
-.guitar {
-  content: "Guitar";
-}
-
-.over {
- background-color: rgba(0, 0, 255, 0.5);
+section > div:first-child {
+  width: 330px;
+  height: 400px;
+  top: 50px;
+  left: 20px;
 }
