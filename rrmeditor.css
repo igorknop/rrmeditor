@@ -1,0 +1,35 @@
+#band {
+  max-width: 800px;
+  max-height: 600px;
+  min-width: 480px;
+  min-height: 320px;
+  border: 1px solid black;
+}
+#band div{
+  height: 80px;
+  width: 50%;
+  float: right;
+  border: 3px inset;
+  display: flex;
+}
+#palete{
+  display: flex;
+}
+.tile{
+  width: 80px;
+  height: 80px;
+  background-color: lightgrey;
+  border: 2px outset;
+}
+
+.bass {
+  content: "Bass";
+}
+
+.guitar {
+  content: "Guitar";
+}
+
+.over {
+ background-color: rgba(0, 0, 255, 0.5);
+}
