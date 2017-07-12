@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
         e.stopPropagation();
         rrm.toggle(x);
         updateImages();
+        this.classList.remove("bounceIn");
+        this.classList.add("bounceIn");
       };
     })(i), false);
   }
