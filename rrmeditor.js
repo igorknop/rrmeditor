@@ -9,10 +9,10 @@ var rrm = {
     [0, 0]
   ],
   inColors: [
-    ["", "MicCla.png", "MicEsc.png"],
-    ["", "GuitaCla.png", "GuitaEsc.png"],
-    ["", "BassCla.png", "BassEsc.png"],
-    ["", "DrumCla.png", "DrumEsc.png"]
+    ["None.png", "MicCla.png", "MicEsc.png"],
+    ["None.png", "GuitaCla.png", "GuitaEsc.png"],
+    ["None.png", "BassCla.png", "BassEsc.png"],
+    ["None.png", "DrumCla.png", "DrumEsc.png"]
   ],
   toggle: function(x) {
     var r = Math.floor((x - 1) / 2);
