@@ -34,6 +34,22 @@ document.addEventListener("DOMContentLoaded", function() {
   }, false);
 
   var instruments = document.querySelectorAll("section > div");
+  instruments[0].addEventListener("dragover", function(e){
+    e.preventDefault();
+  });
+  instruments[0].addEventListener("drop", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var file = e.dataTransfer.files[0];
+    if(file.type.match('image.')){
+      var reader = new FileReader();
+      reader.onload = (function(fileName){
+        var dataURI = fileName.target.result;
+        instruments[0].style.backgroundImage = "url("+dataURI+")";
+      });
+      reader.readAsDataURL(file);
+    }
+  }, true);
   for (var i = 1; i < 9; i++) {
     instruments[i].addEventListener("click", (function(x) {
       return function(e) {
