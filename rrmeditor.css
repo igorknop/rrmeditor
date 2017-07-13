@@ -9,11 +9,8 @@ main>section {
   margin: auto;
   background-image: url("images/BandasFundo.png");
   background-size: contain;
-  max-width: 738px;
-  max-height: 483px;
+  width: 738px;
   height: 483px;
-  min-width: 480px;
-  min-height: 314px;
   border: 1px double white;
   position: relative;
   z-index: 0;
