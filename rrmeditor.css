@@ -98,6 +98,7 @@ section>div:first-child {
   top: 50px;
   left: 20px;
   z-index: 3;
+  background-repeat: no-repeat;
 }
 
 @keyframes bounceIn {
