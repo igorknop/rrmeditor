@@ -137,6 +137,10 @@ section>div:first-child {
   body {
     background-color: transparent;
   }
+  *{
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   h1, p {
     display: none;
   }
