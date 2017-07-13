@@ -8,7 +8,7 @@ body {
 main>section {
   margin: auto;
   background-image: url("images/BandasFundo.png");
-  background-size: contain;
+  background-size: 738px 483px;
   width: 738px;
   height: 483px;
   border: 1px double white;
