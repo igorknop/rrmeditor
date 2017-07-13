@@ -1,17 +1,28 @@
-main > section {
+body {
+  margin: auto;
+  background-color: #666;
+  color: white;
+  text-align: center;
+}
+
+main>section {
+  margin: auto;
+  background-image: url("images/BandasFundo.png");
+  background-size: contain;
   max-width: 738px;
   max-height: 483px;
   height: 483px;
   min-width: 480px;
   min-height: 314px;
-  border: 1px solid black;
+  border: 1px double white;
   position: relative;
-  background-color: black;
+  z-index: 0;
 }
-main > section::after{
-  background-image: url("images/BandasFrente.png");
+
+main>section>div:last-child {
   content: "";
-  opacity: 0.7;
+  background-color: black;
+  opacity: 0.2;
   top: 0;
   left: 0;
   position: absolute;
@@ -20,79 +31,96 @@ main > section::after{
   height: 100%;
 }
 
-section > div {
-  border: 2px solid white;
+section>div {
+  border: 0px solid white;
   position: absolute;
-  width: 58px;
-  height: 59px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
-  z-index: 2;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+  z-index: 4;
 }
 
-section > div:nth-child(even){
-  left: 377px;
+section>div:nth-child(even) {
+  left: 376px;
 }
-section > div:nth-child(odd){
+
+section>div:nth-child(odd) {
   left: 448px;
 }
-section > div:nth-child(2),
-section > div:nth-child(3)
-{
-  top: 50px;
-}
-section > div:nth-child(4),
-section > div:nth-child(5)
-{
-  top: 122px;
-}
-section > div:nth-child(6),
-section > div:nth-child(7)
-{
-  top: 194px;
-}
-section > div:nth-child(8),
-section > div:nth-child(9)
-{
-  top: 266px;
+
+section>div:nth-child(2), section>div:nth-child(3) {
+  top: 49px;
 }
 
-section > div:first-child {
-  width: 330px;
-  height: 400px;
+section>div:nth-child(4), section>div:nth-child(5) {
+  top: 121px;
+}
+
+section>div:nth-child(6), section>div:nth-child(7) {
+  top: 192px;
+}
+
+section>div:nth-child(8), section>div:nth-child(9) {
+  top: 264px;
+}
+
+section>div:nth-child(10) {
+  background-image: url("images/Albuns.png"), url("images/Quadrados.png");
+  background-size: 401px, 353px;
+  background-position: 2px 404px, 42px 20px;
+  background-repeat: no-repeat, no-repeat;
+  top: 0;
+  left: 334px;
+  width: 404px;
+  height: 483px;
+  opacity: 1.0;
+  z-index: 3;
+}
+
+section>div:nth-child(11) {
+  background-image: url("images/PontuacaoFinal.png");
+  background-size: 157px;
+  width: 157px;
+  height: 157px;
+  left: 18px;
+  top: 313px;
+  background-repeat: no-repeat;
+  opacity: 1.0;
+  z-index: 4;
+}
+
+section>div:first-child {
+  width: 336px;
+  height: 433px;
   top: 50px;
   left: 20px;
+  z-index: 3;
 }
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   }
-
   0% {
     opacity: 0;
     transform: scale3d(.3, .3, .3);
   }
-
   20% {
     transform: scale3d(1.1, 1.1, 1.1);
   }
-
   40% {
     transform: scale3d(.9, .9, .9);
   }
-
   60% {
     opacity: 1;
     transform: scale3d(1.03, 1.03, 1.03);
   }
-
   80% {
     transform: scale3d(.97, .97, .97);
   }
-
   to {
     opacity: 1;
     transform: scale3d(1, 1, 1);

@@ -27,11 +27,9 @@ var rrm = {
   }
 }
 document.addEventListener("DOMContentLoaded", function() {
-  var card = document.querySelector("section");
-  card.addEventListener("click", function() {
-    rrm.bg += (rrm.bg < 4) ? 1 : -4;
-    card.style.backgroundColor = rrm.bgColors[rrm.bg];
-  }, false);
+  document.querySelector("section>div:last-child").addEventListener("click", toggleBG, false);
+  document.querySelector("section>div:nth-child(10)").addEventListener("click", toggleBG, false);
+  document.querySelector("section>div:nth-child(11)").addEventListener("click", toggleBG, false);
 
   var instruments = document.querySelectorAll("section > div");
   instruments[0].addEventListener("dragover", function(e){
@@ -71,4 +69,9 @@ function updateImages(){
     var c = rrm.in[r][(j - 1) % 2];
     instruments[j].style.backgroundImage = "url(images/" + rrm.inColors[r][c] + ")";
   }
+}
+
+function toggleBG() {
+  rrm.bg += (rrm.bg < 4) ? 1 : -4;
+  document.querySelector("section>div:last-child").style.backgroundColor = rrm.bgColors[rrm.bg];
 }
