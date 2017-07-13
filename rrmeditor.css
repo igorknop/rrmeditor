@@ -44,27 +44,27 @@ section>div {
 }
 
 section>div:nth-child(even) {
-  left: 376px;
+  left: 378px;
 }
 
 section>div:nth-child(odd) {
-  left: 448px;
+  left: 450px;
 }
 
 section>div:nth-child(2), section>div:nth-child(3) {
-  top: 49px;
+  top: 51px;
 }
 
 section>div:nth-child(4), section>div:nth-child(5) {
-  top: 121px;
+  top: 123px;
 }
 
 section>div:nth-child(6), section>div:nth-child(7) {
-  top: 192px;
+  top: 194px;
 }
 
 section>div:nth-child(8), section>div:nth-child(9) {
-  top: 264px;
+  top: 266px;
 }
 
 section>div:nth-child(10) {
