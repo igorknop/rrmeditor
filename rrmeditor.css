@@ -15,7 +15,10 @@ main>section {
   position: relative;
   z-index: 0;
 }
-
+main>section:last-child {
+  background-image: url("images/BandasVerso.png");
+  display: none;
+}
 main>section>div:last-child {
   content: "";
   background-color: black;
@@ -128,4 +131,17 @@ section>div:first-child {
   animation-name: bounceIn;
   animation-duration: 0.8s;
   animation-fill-mode: both;
+}
+
+@media print {
+  body {
+    background-color: transparent;
+  }
+  h1, p {
+    display: none;
+  }
+  main>section {
+    display: block !important;
+    border-color: transparent;
+  }
 }
